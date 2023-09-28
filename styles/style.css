@@ -1,0 +1,74 @@
+.projects {
+    animation: fadeInUp 1s ease;
+}
+.news {
+    animation: fadeInUp 1s ease;
+}
+.about {
+    animation: fadeInUp 3s ease;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    font-family: 'Georgia', serif;
+}
+header{
+    background-color: #FFC0CB;
+}
+header h1{
+    color: #FF1493;
+    transition: color 0.3s ease;
+    font-size: 60px;
+    font-family:'Brush Script MT', cursive;
+}
+header h1:hover{
+    color: #FF69B4;
+}
+.projects, .news, .about {
+    border: 1px solid #FFC0CB;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    box-shadow: 0 10px 20px rgba(255, 192, 203, 0.3);
+}
+.projects h3, .news h3, .about h3 {
+    color: #FF69B4;
+    font-family: 'Georgia', serif;
+}
+.footer-custom {
+    background-color: #FFC0CB;
+    color: #fff;
+}
+.footer-custom a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-custom a:hover {
+    color: #FF1493;
+}
+.contact-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.contact-links i {
+    margin-right: 5px;
+}
+.contact-links a {
+    margin-right: 10px;
+}
+@media (max-width: 767px) {
+    .contact-links a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
